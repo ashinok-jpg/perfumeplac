@@ -50,6 +50,7 @@
 .pyramid__row--top{border-left:3px solid #f0c46a}
 .pyramid__row--middle{border-left:3px solid #ffa7d4}
 .pyramid__row--base{border-left:3px solid #c98a52}
+.pyramid__row--key{border-left:3px solid var(--muted)}
 .pyramid dt{display:flex;flex-direction:column;font-weight:700}
 .pyramid dt small{color:var(--muted);font-size:.75rem;font-weight:400}
 .pyramid dd{display:flex;flex-wrap:wrap;gap:6px;margin:0}

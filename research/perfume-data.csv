@@ -1,14 +1,19 @@
-id,brand,name,concentration,family,top,middle,base,volumes,price,priceVolume,checkedAt,source,note
-chanel-no5-edp,シャネル,N°5 オードゥ パルファム,EDP,フローラル,アルデヒド・イランイラン・ネロリ,ジャスミン・ローズ,サンダルウッド・バニラ,35・50・100,,,,,ノートと価格は公式で未確認
-chanel-coco-mademoiselle-edp,シャネル,ココ マドモアゼル オードゥ パルファム,EDP,シプレ,オレンジ・ベルガモット,ローズ・ジャスミン,パチョリ・ベチバー・バニラ・ホワイトムスク,35・50・100,,,,,ノートと価格は公式で未確認
-dior-sauvage-edt,ディオール,ソヴァージュ オードゥ トワレ,EDT,アロマティック,ベルガモット・ペッパー,ラベンダー・ピンクペッパー,アンブロキサン・シダー,60・100,,,,,ノートと価格は公式で未確認
-armani-acqua-di-gio-edt,ジョルジオ アルマーニ,アクア ディ ジオ オードトワレ,EDT,マリン,マリンノート・ベルガモット・ネロリ,ジャスミン・ローズマリー,ホワイトムスク・シダー・パチョリ,50・100,,,,,ノートと価格は公式で未確認
-jo-malone-wood-sage-sea-salt,ジョー マローン ロンドン,ウッド セージ & シー ソルト コロン,コロン,ウッディ,アンブレットシード,シーソルト,セージ・レッドアルジー,30・100,,,,,ノートと価格は公式で未確認
-jo-malone-english-pear-freesia,ジョー マローン ロンドン,イングリッシュ ペアー & フリージア コロン,コロン,フルーティ,ペアー,フリージア,パチョリ,30・100,,,,,ノートと価格は公式で未確認
-le-labo-santal-33,ル ラボ,サンタル 33 オードパルファム,EDP,ウッディ,カルダモン・バイオレット,アイリス,サンダルウッド・シダー・レザー・アンブロックス,50・100,,,,,ノートと価格は公式で未確認
-byredo-gypsy-water,バレード,ジプシー ウォーター オードパルファム,EDP,ウッディ,ベルガモット・レモン・ペッパー・ジュニパー,インセンス・パインニードル・アイリス,アンバー・バニラ・サンダルウッド,50・100,,,,,ノートと価格は公式で未確認
-margiela-lazy-sunday-morning,メゾン マルジェラ,レプリカ レイジー サンデー モーニング オードトワレ,EDT,ムスク,ペアー・スズラン,アイリス・ローズ,ホワイトムスク,30・100,,,,,ノートと価格は公式で未確認
-diptyque-philosykos-edt,ディプティック,フィロシコス オードトワレ,EDT,グリーン,フィグリーフ,フィグ,フィグウッド・シダー,50・100,,,,,ノートと価格は公式で未確認
-diptyque-do-son-edt,ディプティック,ドソン オードトワレ,EDT,フローラル,オレンジブロッサム,チュベローズ・ローズ,ムスク・ベンゾイン,50・100,,,,,ノートと価格は公式で未確認
-hermes-jardin-sur-le-nil,エルメス,ナイルの庭 オードトワレ,EDT,グリーン,グレープフルーツ・グリーンマンゴー,ロータス,シカモア・インセンス,30・50・100,,,,,ノートと価格は公式で未確認
-tom-ford-tobacco-vanille,トム フォード ビューティ,タバコ・バニラ オード パルファム スプレィ,EDP,アンバー,タバコリーフ・スパイス,バニラ・トンカビーン・カカオ,ドライフルーツ・ウッド,30・50・100,,,,,ノートと価格は公式で未確認
+id,brand,name,concentration,family,top,middle,base,keyNotes,volumes,price,priceVolume,checkedAt,source,note
+chanel-no5-edp,シャネル,シャネル N°5 オードゥ パルファム,EDP,フローラル,シトラス・アルデヒド,ローズ ドゥ メ・ジャスミン,バニラ,,50・100,28270,100,2026-11-11,https://www.chanel.com/jp/fragrance/p/125530/n5-eau-de-parfum-spray/,50mlは20570円
+chanel-coco-mademoiselle-edp,シャネル,ココ マドモアゼル オードゥ パルファム,EDP,アンバー,オレンジ,ジャスミン・ローズ,パチュリ・ヴェチヴァー,,50・100,27610,100,2026-11-11,https://www.chanel.com/jp/fragrance/p/116520/coco-mademoiselle-eau-de-parfum-spray/,50mlは20020円。公式の分類は「アンバー ウッディ」
+chanel-bleu-edp,シャネル,ブルー ドゥ シャネル オードゥ パルファム,EDP,ウッディ,,,,アンバー・シダー・ムスク・サンダルウッド,50・100,24310,100,2026-11-11,https://www.chanel.com/jp/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/,50mlは17270円。公式の分類は「アロマティック ウッディ」
+dior-sauvage-edt,ディオール,ソヴァージュ オードゥ トワレ,EDT,アロマティック,,,,ベルガモット・サンショウ・エレミ・アンブロクサン・ウッド,30・60・100,18480,100,2026-11-11,https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html,30mlは11440円・60mlは14300円。公式の分類は「シトラス アロマティック」
+dior-miss-dior-edp,ディオール,ミス ディオール オードゥ パルファン,EDP,シプレ,,,,センティフォリアローズ・サンダルウッド・バニラ・トンカビーン,30・50,18040,50,2026-11-11,https://www.dior.com/ja_jp/beauty/products/%E3%83%9F%E3%82%B9-%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0000393.html,30mlは12430円
+armani-acqua-di-gio-edt,ジョルジオ アルマーニ,アクア ディ ジオ プール オム オードトワレ,EDT,マリン,,,,ベルガモット・ネロリ・グリーンマンダリン・アクアティックノート・ジャスミン・ローズマリー・柿・パチョリ,50・100,18040,100,2026-11-11,https://www.armani.com/ja-jp/giorgio-armani/eau-de-toilette-acqua-di-gio-100-ml-cod-LE316300-NLP-100ML/,50mlは13750円。公式の分類は「ウッディマリン」
+jo-malone-wood-sage-sea-salt,ジョー マローン ロンドン,ウッド セージ & シー ソルト コロン,コロン,ウッディ,アンブレットシード,シーソルト,セージ,,30・50・100,24860,100,2026-11-11,https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne,
+jo-malone-english-pear-freesia,ジョー マローン ロンドン,イングリッシュ ペアー & フリージア コロン,コロン,フルーティ,ウィリアム ペアー,フリージア,パチョリ,,30・50・100,24860,100,2026-11-11,https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne,
+le-labo-santal-33,ル ラボ,サンタル 33 オード パルファム,EDP,ウッディ,,,,カルダモン・アイリス・バイオレット・ウッド・レザー・ムスク,15・50・100,47190,100,2026-11-11,https://www.lelabofragrances.jp/products/santal-33_144,15mlは14300円・50mlは32230円
+le-labo-another-13,ル ラボ,アナザー 13 オード パルファム,EDP,ムスク,,,,ムスク・アンブロキシド・ジャスミン・モス,15・50・100,47190,100,2026-11-11,https://www.lelabofragrances.jp/products/another-13_134,15mlは14300円・50mlは32230円
+byredo-gypsy-water,バイレード,ジプシー ウォーター オードパルファム,EDP,ウッディ,ベルガモット・レモン・ペッパー,インセンス,アンバー・サンダルウッド・バニラ,,50・100,,,2026-11-11,https://www.byredo.com/eu_en/c/perfume/best-sellers/gypsy-water,日本に公式通販がないため価格は載せていません。ノートは公式サイト（英語）から
+margiela-lazy-sunday-morning,メゾン マルジェラ,レプリカ オードトワレ レイジーサンデー モーニング,EDT,ムスク,,,,スズラン・アイリス・ホワイトムスク,10・30・100,24970,100,2026-11-11,https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-lazy-sunday-morning/MM009.html,通常ボトルの価格。公式の分類は「フローラルムスク」
+margiela-by-the-fireplace,メゾン マルジェラ,レプリカ オードトワレ バイ ザ ファイヤープレイス,EDT,アンバー,,,,チェスナッツ・グアヤクウッド・バニラ,10・30・100,24970,100,2026-11-11,https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html,公式の分類は「ウッディー アンバー」
+diptyque-philosykos-edt,ディプティック,フィロシコス オードトワレ,EDT,グリーン,,,,イチジクの葉・イチジクのミルク・イチジクの木・ブラックペッパー,50・100,25960,100,2026-11-11,https://jp.diptyqueparis.com/ja-jp/products/eau-de-toilette-philosykos-philo50v2,50mlは18700円
+diptyque-do-son-edt,ディプティック,ドソン オードトワレ,EDT,フローラル,,,,テュベルーズ・オレンジブロッサム・ジャスミン・マリンアコード,50・100,25960,100,2026-11-11,https://jp.diptyqueparis.com/ja-jp/products/eau-de-toilette-do-son-doson100v2,50mlは18700円
+diptyque-tam-dao-edt,ディプティック,タムダオ オードトワレ,EDT,ウッディ,,,,サンダルウッド・シダー・シプレ（イトスギ）・マートル,50・100,25960,100,2026-11-11,https://jp.diptyqueparis.com/ja-jp/products/eau-de-toilette-tam-dao-tamdao100v2,50mlは18700円
+hermes-jardin-sur-le-nil,エルメス,《ナイルの庭》 オードトワレ,EDT,グリーン,,,,グリーンマンゴー・ロータス・シカモア,30・50・100,21560,100,2026-11-11,https://www.hermes.com/jp/ja/product/%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC-%E3%80%8A%E3%83%8A%E3%82%A4%E3%83%AB%E3%81%AE%E5%BA%AD%E3%80%8B-V20396/,30mlは10780円
+tom-ford-tobacco-vanille,トム フォード ビューティ,タバコ・バニラ オード パルファム スプレィ,EDP,アンバー,,,,トンカビーン・バニラ・ココア・ドライフルーツ・木の樹液,10・30・50,41250,50,2026-11-11,https://item.rakuten.co.jp/tomfordbeauty/fgr_tvops_30/,日本の公式サイトがないため、楽天市場のトムフォードビューティ公式ストアの価格。10mlは16170円・30mlは29150円

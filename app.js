@@ -11,7 +11,7 @@ const DATA_FILE = path.join(__dirname, 'data', 'perfumes.json');
 const loadData = () => JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
 
 const SORTS = [['brand', 'ブランド順'], ['yen', '1mlあたりが安い順'], ['conc', '濃度が高い順']];
-const allNotes = (p) => [...p.notes.top, ...p.notes.middle, ...p.notes.base];
+const allNotes = (p) => [...p.notes.top, ...p.notes.middle, ...p.notes.base, ...(p.notes.key || [])];
 
 // 同じノートの数と系統が同じかどうかだけで「似た香り」を選ぶ（主観は入れない）
 function similar(p, perfumes, n = 4) {

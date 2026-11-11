@@ -48,6 +48,8 @@ const perfumes = rows.map((r, i) => {
   const o = Object.fromEntries(header.map((h, j) => [h.trim(), (r[j] || '').trim()]));
   const conc = CONCENTRATIONS[o.concentration];
   if (!o.id) errors.push(`${i + 2}行目: id がありません`);
+  if (!o.top && !o.middle && !o.base && !o.keyNotes) errors.push(`${o.id}: ノートがありません`);
+  if ((o.top || o.middle || o.base) && o.keyNotes) errors.push(`${o.id}: top/middle/base と keyNotes はどちらか一方だけにしてください`);
   if (!conc) errors.push(`${o.id}: 濃度「${o.concentration}」は ${Object.keys(CONCENTRATIONS).join('/')} のどれかにしてください`);
   const price = num(o.price);
   const priceVolume = num(o.priceVolume);
@@ -58,7 +60,8 @@ const perfumes = rows.map((r, i) => {
     concentration: o.concentration,
     concentrationInfo: conc || null,
     family: o.family,
-    notes: { top: list(o.top), middle: list(o.middle), base: list(o.base) },
+    // ブランドがトップ・ミドル・ベースに分けて公表していないときは keyNotes（主なノート）だけを使う
+    notes: { top: list(o.top), middle: list(o.middle), base: list(o.base), key: list(o.keyNotes) },
     volumes: list(o.volumes).map(Number),
     price,
     priceVolume,

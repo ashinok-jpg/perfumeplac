@@ -65,7 +65,7 @@
             <div class="p-card__main">
               <span class="p-card__meta"><span class="fam-chip" data-family="<%= p.family %>"><%= p.family %></span><%= p.brand %></span>
               <h3><%= p.name %></h3>
-              <p class="p-card__spec"><%= [...p.notes.top, ...p.notes.middle, ...p.notes.base].slice(0, 5).join('・') %></p>
+              <p class="p-card__spec"><%= [...p.notes.top, ...p.notes.middle, ...p.notes.base, ...(p.notes.key || [])].slice(0, 5).join('・') %></p>
             </div>
             <div class="p-card__scores">
               <span class="p-score"><b class="conc"><%= p.concentration %></b><small>濃度</small></span>
@@ -79,7 +79,8 @@
     <p class="list-note">
       香水に点数は付けていません。香りの好みは人それぞれなので、ノート・濃度・価格という「書いてある事実」だけで比べます。
       <% if (updatedAt) { %>価格は<%= updatedAt.replace(/-/g, '/') %>時点の公式価格です。<% } %>
-      <% if (unverified) { %>「—」の価格は確認中です。<% } %>
+      <% if (unverified) { %>まだ公式で確認していない香水があります。<% } %>
+      <% if (perfumes.some(p => p.yenPerMl == null)) { %>「—」は日本の公式価格がない香水です。<% } %>
       <a href="/method">比べ方</a>
     </p>
   </div>

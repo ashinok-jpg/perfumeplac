@@ -1,5 +1,5 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-11-11",
   "concentrations": {
     "パルファム": {
       "rank": 5,
@@ -26,7 +26,7 @@
     {
       "id": "chanel-no5-edp",
       "brand": "シャネル",
-      "name": "N°5 オードゥ パルファム",
+      "name": "シャネル N°5 オードゥ パルファム",
       "concentration": "EDP",
       "concentrationInfo": {
         "rank": 4,
@@ -36,31 +36,29 @@
       "family": "フローラル",
       "notes": {
         "top": [
-          "アルデヒド",
-          "イランイラン",
-          "ネロリ"
+          "シトラス",
+          "アルデヒド"
         ],
         "middle": [
-          "ジャスミン",
-          "ローズ"
+          "ローズ ドゥ メ",
+          "ジャスミン"
         ],
         "base": [
-          "サンダルウッド",
           "バニラ"
-        ]
+        ],
+        "key": []
       },
       "volumes": [
-        35,
         50,
         100
       ],
-      "price": null,
-      "priceVolume": null,
-      "yenPerMl": null,
-      "checkedAt": null,
-      "source": null,
-      "note": "ノートと価格は公式で未確認",
-      "verified": false
+      "price": 28270,
+      "priceVolume": 100,
+      "yenPerMl": 283,
+      "checkedAt": "2026-11-11",
+      "source": "https://www.chanel.com/jp/fragrance/p/125530/n5-eau-de-parfum-spray/",
+      "note": "50mlは20570円",
+      "verified": true
     },
     {
       "id": "chanel-coco-mademoiselle-edp",
@@ -72,35 +70,66 @@
         "oil": "10〜20%",
         "hours": "5〜8時間"
       },
-      "family": "シプレ",
+      "family": "アンバー",
       "notes": {
         "top": [
-          "オレンジ",
-          "ベルガモット"
+          "オレンジ"
         ],
         "middle": [
-          "ローズ",
-          "ジャスミン"
+          "ジャスミン",
+          "ローズ"
         ],
         "base": [
-          "パチョリ",
-          "ベチバー",
-          "バニラ",
-          "ホワイトムスク"
-        ]
+          "パチュリ",
+          "ヴェチヴァー"
+        ],
+        "key": []
       },
       "volumes": [
-        35,
         50,
         100
       ],
-      "price": null,
-      "priceVolume": null,
-      "yenPerMl": null,
-      "checkedAt": null,
-      "source": null,
-      "note": "ノートと価格は公式で未確認",
-      "verified": false
+      "price": 27610,
+      "priceVolume": 100,
+      "yenPerMl": 276,
+      "checkedAt": "2026-11-11",
+      "source": "https://www.chanel.com/jp/fragrance/p/116520/coco-mademoiselle-eau-de-parfum-spray/",
+      "note": "50mlは20020円。公式の分類は「アンバー ウッディ」",
+      "verified": true
+    },
+    {
+      "id": "chanel-bleu-edp",
+      "brand": "シャネル",
+      "name": "ブルー ドゥ シャネル オードゥ パルファム",
+      "concentration": "EDP",
+      "concentrationInfo": {
+        "rank": 4,
+        "oil": "10〜20%",
+        "hours": "5〜8時間"
+      },
+      "family": "ウッディ",
+      "notes": {
+        "top": [],
+        "middle": [],
+        "base": [],
+        "key": [
+          "アンバー",
+          "シダー",
+          "ムスク",
+          "サンダルウッド"
+        ]
+      },
+      "volumes": [
+        50,
+        100
+      ],
+      "price": 24310,
+      "priceVolume": 100,
+      "yenPerMl": 243,
+      "checkedAt": "2026-11-11",
+      "source": "https://www.chanel.com/jp/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/",
+      "note": "50mlは17270円。公式の分類は「アロマティック ウッディ」",
+      "verified": true
     },
     {
       "id": "dior-sauvage-edt",
@@ -114,35 +143,68 @@
       },
       "family": "アロマティック",
       "notes": {
-        "top": [
+        "top": [],
+        "middle": [],
+        "base": [],
+        "key": [
           "ベルガモット",
-          "ペッパー"
-        ],
-        "middle": [
-          "ラベンダー",
-          "ピンクペッパー"
-        ],
-        "base": [
-          "アンブロキサン",
-          "シダー"
+          "サンショウ",
+          "エレミ",
+          "アンブロクサン",
+          "ウッド"
         ]
       },
       "volumes": [
+        30,
         60,
         100
       ],
-      "price": null,
-      "priceVolume": null,
-      "yenPerMl": null,
-      "checkedAt": null,
-      "source": null,
-      "note": "ノートと価格は公式で未確認",
-      "verified": false
+      "price": 18480,
+      "priceVolume": 100,
+      "yenPerMl": 185,
+      "checkedAt": "2026-11-11",
+      "source": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html",
+      "note": "30mlは11440円・60mlは14300円。公式の分類は「シトラス アロマティック」",
+      "verified": true
+    },
+    {
+      "id": "dior-miss-dior-edp",
+      "brand": "ディオール",
+      "name": "ミス ディオール オードゥ パルファン",
+      "concentration": "EDP",
+      "concentrationInfo": {
+        "rank": 4,
+        "oil": "10〜20%",
+        "hours": "5〜8時間"
+      },
+      "family": "シプレ",
+      "notes": {
+        "top": [],
+        "middle": [],
+        "base": [],
+        "key": [
+          "センティフォリアローズ",
+          "サンダルウッド",
+          "バニラ",
+          "トンカビーン"
+        ]
+      },
+      "volumes": [
+        30,
+        50
+      ],
+      "price": 18040,
+      "priceVolume": 50,
+      "yenPerMl": 361,
+      "checkedAt": "2026-11-11",
+      "source": "https://www.dior.com/ja_jp/beauty/products/%E3%83%9F%E3%82%B9-%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0000393.html",
+      "note": "30mlは12430円",
+      "verified": true
     },
     {
       "id": "armani-acqua-di-gio-edt",
       "brand": "ジョルジオ アルマーニ",
-      "name": "アクア ディ ジオ オードトワレ",
+      "name": "アクア ディ ジオ プール オム オードトワレ",
       "concentration": "EDT",
       "concentrationInfo": {
         "rank": 3,
@@ -151,18 +213,17 @@
       },
       "family": "マリン",
       "notes": {
-        "top": [
-          "マリンノート",
+        "top": [],
+        "middle": [],
+        "base": [],
+        "key": [
           "ベルガモット",
-          "ネロリ"
-        ],
-        "middle": [
+          "ネロリ",
+          "グリーンマンダリン",
+          "アクアティックノート",
           "ジャスミン",
-          "ローズマリー"
-        ],
-        "base": [
-          "ホワイトムスク",
-          "シダー",
+          "ローズマリー",
+          "柿",
           "パチョリ"
         ]
       },
@@ -170,13 +231,13 @@
         50,
         100
       ],
-      "price": null,
-      "priceVolume": null,
-      "yenPerMl": null,
-      "checkedAt": null,
-      "source": null,
-      "note": "ノートと価格は公式で未確認",
-      "verified": false
+      "price": 18040,
+      "priceVolume": 100,
+      "yenPerMl": 180,
+      "checkedAt": "2026-11-11",
+      "source": "https://www.armani.com/ja-jp/giorgio-armani/eau-de-toilette-acqua-di-gio-100-ml-cod-LE316300-NLP-100ML/",
+      "note": "50mlは13750円。公式の分類は「ウッディマリン」",
+      "verified": true
     },
     {
       "id": "jo-malone-wood-sage-sea-salt",
@@ -197,21 +258,22 @@
           "シーソルト"
         ],
         "base": [
-          "セージ",
-          "レッドアルジー"
-        ]
+          "セージ"
+        ],
+        "key": []
       },
       "volumes": [
         30,
+        50,
         100
       ],
-      "price": null,
-      "priceVolume": null,
-      "yenPerMl": null,
-      "checkedAt": null,
-      "source": null,
-      "note": "ノートと価格は公式で未確認",
-      "verified": false
+      "price": 24860,
+      "priceVolume": 100,
+      "yenPerMl": 249,
+      "checkedAt": "2026-11-11",
+      "source": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+      "note": "",
+      "verified": true
     },
     {
       "id": "jo-malone-english-pear-freesia",
@@ -226,31 +288,33 @@
       "family": "フルーティ",
       "notes": {
         "top": [
-          "ペアー"
+          "ウィリアム ペアー"
         ],
         "middle": [
           "フリージア"
         ],
         "base": [
           "パチョリ"
-        ]
+        ],
+        "key": []
       },
       "volumes": [
         30,
+        50,
         100
       ],
-      "price": null,
-      "priceVolume": null,
-      "yenPerMl": null,
-      "checkedAt": null,
-      "source": null,
-      "note": "ノートと価格は公式で未確認",
-      "verified": false
+      "price": 24860,
+      "priceVolume": 100,
+      "yenPerMl": 249,
+      "checkedAt": "2026-11-11",
+      "source": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+      "note": "",
+      "verified": true
     },
     {
       "id": "le-labo-santal-33",
       "brand": "ル ラボ",
-      "name": "サンタル 33 オードパルファム",
+      "name": "サンタル 33 オード パルファム",
       "concentration": "EDP",
       "concentrationInfo": {
         "rank": 4,
@@ -259,35 +323,69 @@
       },
       "family": "ウッディ",
       "notes": {
-        "top": [
+        "top": [],
+        "middle": [],
+        "base": [],
+        "key": [
           "カルダモン",
-          "バイオレット"
-        ],
-        "middle": [
-          "アイリス"
-        ],
-        "base": [
-          "サンダルウッド",
-          "シダー",
+          "アイリス",
+          "バイオレット",
+          "ウッド",
           "レザー",
-          "アンブロックス"
+          "ムスク"
         ]
       },
       "volumes": [
+        15,
         50,
         100
       ],
-      "price": null,
-      "priceVolume": null,
-      "yenPerMl": null,
-      "checkedAt": null,
-      "source": null,
-      "note": "ノートと価格は公式で未確認",
-      "verified": false
+      "price": 47190,
+      "priceVolume": 100,
+      "yenPerMl": 472,
+      "checkedAt": "2026-11-11",
+      "source": "https://www.lelabofragrances.jp/products/santal-33_144",
+      "note": "15mlは14300円・50mlは32230円",
+      "verified": true
+    },
+    {
+      "id": "le-labo-another-13",
+      "brand": "ル ラボ",
+      "name": "アナザー 13 オード パルファム",
+      "concentration": "EDP",
+      "concentrationInfo": {
+        "rank": 4,
+        "oil": "10〜20%",
+        "hours": "5〜8時間"
+      },
+      "family": "ムスク",
+      "notes": {
+        "top": [],
+        "middle": [],
+        "base": [],
+        "key": [
+          "ムスク",
+          "アンブロキシド",
+          "ジャスミン",
+          "モス"
+        ]
+      },
+      "volumes": [
+        15,
+        50,
+        100
+      ],
+      "price": 47190,
+      "priceVolume": 100,
+      "yenPerMl": 472,
+      "checkedAt": "2026-11-11",
+      "source": "https://www.lelabofragrances.jp/products/another-13_134",
+      "note": "15mlは14300円・50mlは32230円",
+      "verified": true
     },
     {
       "id": "byredo-gypsy-water",
-      "brand": "バレード",
+      "brand": "バイレード",
       "name": "ジプシー ウォーター オードパルファム",
       "concentration": "EDP",
       "concentrationInfo": {
@@ -300,19 +398,17 @@
         "top": [
           "ベルガモット",
           "レモン",
-          "ペッパー",
-          "ジュニパー"
+          "ペッパー"
         ],
         "middle": [
-          "インセンス",
-          "パインニードル",
-          "アイリス"
+          "インセンス"
         ],
         "base": [
           "アンバー",
-          "バニラ",
-          "サンダルウッド"
-        ]
+          "サンダルウッド",
+          "バニラ"
+        ],
+        "key": []
       },
       "volumes": [
         50,
@@ -321,15 +417,15 @@
       "price": null,
       "priceVolume": null,
       "yenPerMl": null,
-      "checkedAt": null,
-      "source": null,
-      "note": "ノートと価格は公式で未確認",
-      "verified": false
+      "checkedAt": "2026-11-11",
+      "source": "https://www.byredo.com/eu_en/c/perfume/best-sellers/gypsy-water",
+      "note": "日本に公式通販がないため価格は載せていません。ノートは公式サイト（英語）から",
+      "verified": true
     },
     {
       "id": "margiela-lazy-sunday-morning",
       "brand": "メゾン マルジェラ",
-      "name": "レプリカ レイジー サンデー モーニング オードトワレ",
+      "name": "レプリカ オードトワレ レイジーサンデー モーニング",
       "concentration": "EDT",
       "concentrationInfo": {
         "rank": 3,
@@ -338,29 +434,61 @@
       },
       "family": "ムスク",
       "notes": {
-        "top": [
-          "ペアー",
-          "スズラン"
-        ],
-        "middle": [
+        "top": [],
+        "middle": [],
+        "base": [],
+        "key": [
+          "スズラン",
           "アイリス",
-          "ローズ"
-        ],
-        "base": [
           "ホワイトムスク"
         ]
       },
       "volumes": [
+        10,
         30,
         100
       ],
-      "price": null,
-      "priceVolume": null,
-      "yenPerMl": null,
-      "checkedAt": null,
-      "source": null,
-      "note": "ノートと価格は公式で未確認",
-      "verified": false
+      "price": 24970,
+      "priceVolume": 100,
+      "yenPerMl": 250,
+      "checkedAt": "2026-11-11",
+      "source": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-lazy-sunday-morning/MM009.html",
+      "note": "通常ボトルの価格。公式の分類は「フローラルムスク」",
+      "verified": true
+    },
+    {
+      "id": "margiela-by-the-fireplace",
+      "brand": "メゾン マルジェラ",
+      "name": "レプリカ オードトワレ バイ ザ ファイヤープレイス",
+      "concentration": "EDT",
+      "concentrationInfo": {
+        "rank": 3,
+        "oil": "5〜15%",
+        "hours": "3〜5時間"
+      },
+      "family": "アンバー",
+      "notes": {
+        "top": [],
+        "middle": [],
+        "base": [],
+        "key": [
+          "チェスナッツ",
+          "グアヤクウッド",
+          "バニラ"
+        ]
+      },
+      "volumes": [
+        10,
+        30,
+        100
+      ],
+      "price": 24970,
+      "priceVolume": 100,
+      "yenPerMl": 250,
+      "checkedAt": "2026-11-11",
+      "source": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+      "note": "公式の分類は「ウッディー アンバー」",
+      "verified": true
     },
     {
       "id": "diptyque-philosykos-edt",
@@ -374,28 +502,27 @@
       },
       "family": "グリーン",
       "notes": {
-        "top": [
-          "フィグリーフ"
-        ],
-        "middle": [
-          "フィグ"
-        ],
-        "base": [
-          "フィグウッド",
-          "シダー"
+        "top": [],
+        "middle": [],
+        "base": [],
+        "key": [
+          "イチジクの葉",
+          "イチジクのミルク",
+          "イチジクの木",
+          "ブラックペッパー"
         ]
       },
       "volumes": [
         50,
         100
       ],
-      "price": null,
-      "priceVolume": null,
-      "yenPerMl": null,
-      "checkedAt": null,
-      "source": null,
-      "note": "ノートと価格は公式で未確認",
-      "verified": false
+      "price": 25960,
+      "priceVolume": 100,
+      "yenPerMl": 260,
+      "checkedAt": "2026-11-11",
+      "source": "https://jp.diptyqueparis.com/ja-jp/products/eau-de-toilette-philosykos-philo50v2",
+      "note": "50mlは18700円",
+      "verified": true
     },
     {
       "id": "diptyque-do-son-edt",
@@ -409,34 +536,66 @@
       },
       "family": "フローラル",
       "notes": {
-        "top": [
-          "オレンジブロッサム"
-        ],
-        "middle": [
-          "チュベローズ",
-          "ローズ"
-        ],
-        "base": [
-          "ムスク",
-          "ベンゾイン"
+        "top": [],
+        "middle": [],
+        "base": [],
+        "key": [
+          "テュベルーズ",
+          "オレンジブロッサム",
+          "ジャスミン",
+          "マリンアコード"
         ]
       },
       "volumes": [
         50,
         100
       ],
-      "price": null,
-      "priceVolume": null,
-      "yenPerMl": null,
-      "checkedAt": null,
-      "source": null,
-      "note": "ノートと価格は公式で未確認",
-      "verified": false
+      "price": 25960,
+      "priceVolume": 100,
+      "yenPerMl": 260,
+      "checkedAt": "2026-11-11",
+      "source": "https://jp.diptyqueparis.com/ja-jp/products/eau-de-toilette-do-son-doson100v2",
+      "note": "50mlは18700円",
+      "verified": true
+    },
+    {
+      "id": "diptyque-tam-dao-edt",
+      "brand": "ディプティック",
+      "name": "タムダオ オードトワレ",
+      "concentration": "EDT",
+      "concentrationInfo": {
+        "rank": 3,
+        "oil": "5〜15%",
+        "hours": "3〜5時間"
+      },
+      "family": "ウッディ",
+      "notes": {
+        "top": [],
+        "middle": [],
+        "base": [],
+        "key": [
+          "サンダルウッド",
+          "シダー",
+          "シプレ（イトスギ）",
+          "マートル"
+        ]
+      },
+      "volumes": [
+        50,
+        100
+      ],
+      "price": 25960,
+      "priceVolume": 100,
+      "yenPerMl": 260,
+      "checkedAt": "2026-11-11",
+      "source": "https://jp.diptyqueparis.com/ja-jp/products/eau-de-toilette-tam-dao-tamdao100v2",
+      "note": "50mlは18700円",
+      "verified": true
     },
     {
       "id": "hermes-jardin-sur-le-nil",
       "brand": "エルメス",
-      "name": "ナイルの庭 オードトワレ",
+      "name": "《ナイルの庭》 オードトワレ",
       "concentration": "EDT",
       "concentrationInfo": {
         "rank": 3,
@@ -445,16 +604,13 @@
       },
       "family": "グリーン",
       "notes": {
-        "top": [
-          "グレープフルーツ",
-          "グリーンマンゴー"
-        ],
-        "middle": [
-          "ロータス"
-        ],
-        "base": [
-          "シカモア",
-          "インセンス"
+        "top": [],
+        "middle": [],
+        "base": [],
+        "key": [
+          "グリーンマンゴー",
+          "ロータス",
+          "シカモア"
         ]
       },
       "volumes": [
@@ -462,13 +618,13 @@
         50,
         100
       ],
-      "price": null,
-      "priceVolume": null,
-      "yenPerMl": null,
-      "checkedAt": null,
-      "source": null,
-      "note": "ノートと価格は公式で未確認",
-      "verified": false
+      "price": 21560,
+      "priceVolume": 100,
+      "yenPerMl": 216,
+      "checkedAt": "2026-11-11",
+      "source": "https://www.hermes.com/jp/ja/product/%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC-%E3%80%8A%E3%83%8A%E3%82%A4%E3%83%AB%E3%81%AE%E5%BA%AD%E3%80%8B-V20396/",
+      "note": "30mlは10780円",
+      "verified": true
     },
     {
       "id": "tom-ford-tobacco-vanille",
@@ -482,32 +638,29 @@
       },
       "family": "アンバー",
       "notes": {
-        "top": [
-          "タバコリーフ",
-          "スパイス"
-        ],
-        "middle": [
-          "バニラ",
+        "top": [],
+        "middle": [],
+        "base": [],
+        "key": [
           "トンカビーン",
-          "カカオ"
-        ],
-        "base": [
+          "バニラ",
+          "ココア",
           "ドライフルーツ",
-          "ウッド"
+          "木の樹液"
         ]
       },
       "volumes": [
+        10,
         30,
-        50,
-        100
+        50
       ],
-      "price": null,
-      "priceVolume": null,
-      "yenPerMl": null,
-      "checkedAt": null,
-      "source": null,
-      "note": "ノートと価格は公式で未確認",
-      "verified": false
+      "price": 41250,
+      "priceVolume": 50,
+      "yenPerMl": 825,
+      "checkedAt": "2026-11-11",
+      "source": "https://item.rakuten.co.jp/tomfordbeauty/fgr_tvops_30/",
+      "note": "日本の公式サイトがないため、楽天市場のトムフォードビューティ公式ストアの価格。10mlは16170円・30mlは29150円",
+      "verified": true
     }
   ]
 }

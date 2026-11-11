@@ -16,13 +16,16 @@
       <div class="detail-score">
         <span class="detail-score__use">価格</span>
         <span class="p-score p-score--value"><b><%= p.yenPerMl != null ? p.yenPerMl.toLocaleString() : '—' %></b><small>円/ml</small></span>
-        <span class="detail-score__rank"><%= p.price ? p.priceVolume + 'ml ' + p.price.toLocaleString() + '円で計算' : '価格は確認中です' %></span>
+        <span class="detail-score__rank"><%= p.price ? p.priceVolume + 'ml ' + p.price.toLocaleString() + '円で計算' : (p.verified ? '日本の公式価格はありません' : '価格は確認中です') %></span>
       </div>
     </div>
 
     <h2>香りのノート</h2>
+    <% const rows = p.notes.key && p.notes.key.length
+      ? [['key', '主なノート', 'ブランドは段階に分けて公表していません']]
+      : [['top', 'トップ', 'つけてすぐ〜15分ほど'], ['middle', 'ミドル', '30分〜2時間ほど'], ['base', 'ベース', '2時間以降']]; %>
     <dl class="pyramid">
-      <% [['top', 'トップ', 'つけてすぐ〜15分ほど'], ['middle', 'ミドル', '30分〜2時間ほど'], ['base', 'ベース', '2時間以降']].forEach(function([k, label, when]){ %>
+      <% rows.forEach(function([k, label, when]){ %>
         <div class="pyramid__row pyramid__row--<%= k %>">
           <dt><%= label %><small><%= when %></small></dt>
           <dd>
@@ -58,9 +61,10 @@
       <tr><th>系統</th><td><%= p.family %></td></tr>
       <tr><th>濃度</th><td><%= p.concentration %></td></tr>
       <tr><th>容量</th><td><%= p.volumes.length ? p.volumes.join(' / ') + 'ml' : '—' %></td></tr>
-      <tr><th>価格</th><td><%= p.price ? p.priceVolume + 'ml ' + p.price.toLocaleString() + '円' : '確認中' %></td></tr>
+      <tr><th>価格</th><td><%= p.price ? p.priceVolume + 'ml ' + p.price.toLocaleString() + '円' : (p.verified ? '日本の公式価格なし' : '確認中') %></td></tr>
       <tr><th>確認日</th><td><%= p.checkedAt ? p.checkedAt.replace(/-/g, '/') : '—' %></td></tr>
     </table>
+    <% if (p.note) { %><p class="list-note">メモ：<%= p.note %></p><% } %>
     <% if (!p.verified) { %><p class="pending-note">このページのノートと価格は、まだ公式ページで確認していません。</p><% } %>
     <% if (p.source) { %><p><a class="btn" href="<%= p.source %>" target="_blank" rel="noopener nofollow">出典ページを見る</a></p><% } %>
   </div>
