@@ -1,0 +1,87 @@
+<%- include('partials/header') %>
+<%
+  const params = (over) => { const o = Object.assign({ family, conc, sort: sort === 'brand' ? '' : sort, q }, over); const s = Object.entries(o).filter(([, v]) => v).map(([k, v]) => k + '=' + encodeURIComponent(v)).join('&'); return '/' + (s ? '?' + s : ''); };
+  const unverified = perfumes.filter(p => !p.verified).length;
+%>
+<section class="list-hero">
+  <div class="container">
+    <h1>香水を、事実で比べる。</h1>
+    <p class="page-lead"><%= total %>本の香水を、香りのノート・濃度・1mlあたりの価格で比べられます。</p>
+
+    <form class="list-search" method="GET" action="/" role="search">
+      <% if (family) { %><input type="hidden" name="family" value="<%= family %>"><% } %>
+      <% if (conc) { %><input type="hidden" name="conc" value="<%= conc %>"><% } %>
+      <div class="field">
+        <input class="input" name="q" placeholder="ブランド・香水名・ノート（例：ムスク、ローズ）で検索" value="<%= q %>" aria-label="香水検索">
+      </div>
+      <button class="btn" type="submit">検索</button>
+    </form>
+
+    <div class="use-tabs" aria-label="濃度で絞り込み">
+      <a class="use-tab <%= !conc ? 'active' : '' %>" href="<%= params({ conc: '' }) %>">すべての濃度</a>
+      <% concs.forEach(function(c){ %>
+        <a class="use-tab <%= conc === c ? 'active' : '' %>" href="<%= params({ conc: c }) %>"><%= c %></a>
+      <% }) %>
+    </div>
+
+    <div class="brand-tabs" aria-label="香りの系統で絞り込み">
+      <a href="<%= params({ family: '' }) %>" class="brand-tab <%= !family ? 'active' : '' %>">すべての系統</a>
+      <% families.forEach(function(f){ %>
+        <a href="<%= params({ family: f }) %>" class="brand-tab <%= family === f ? 'active' : '' %>"><%= f %></a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section list-section">
+  <div class="container">
+    <form class="list-bar" method="GET" action="/">
+      <% if (family) { %><input type="hidden" name="family" value="<%= family %>"><% } %>
+      <% if (conc) { %><input type="hidden" name="conc" value="<%= conc %>"><% } %>
+      <% if (q) { %><input type="hidden" name="q" value="<%= q %>"><% } %>
+      <span class="list-bar__count"><strong><%= perfumes.length %></strong> 本</span>
+      <label class="list-bar__sort">
+        並び順
+        <select name="sort" onchange="this.form.submit()">
+          <% sorts.forEach(function([v, label]){ %>
+            <option value="<%= v %>" <%= sort === v ? 'selected' : '' %>><%= label %></option>
+          <% }) %>
+        </select>
+      </label>
+      <noscript><button class="btn" type="submit">並べ替え</button></noscript>
+    </form>
+
+    <% if (!perfumes.length) { %>
+      <div class="list-empty">
+        <p>条件に合う香水が見つかりませんでした。</p>
+        <a class="btn" href="/">条件をリセット</a>
+      </div>
+    <% } %>
+
+    <ol class="p-list">
+      <% perfumes.forEach(function(p){ %>
+        <li class="p-card">
+          <a class="p-card__link" href="/perfume/<%= p.id %>">
+            <div class="p-card__main">
+              <span class="p-card__meta"><span class="fam-chip" data-family="<%= p.family %>"><%= p.family %></span><%= p.brand %></span>
+              <h3><%= p.name %></h3>
+              <p class="p-card__spec"><%= [...p.notes.top, ...p.notes.middle, ...p.notes.base].slice(0, 5).join('・') %></p>
+            </div>
+            <div class="p-card__scores">
+              <span class="p-score"><b class="conc"><%= p.concentration %></b><small>濃度</small></span>
+              <span class="p-score p-score--value"><b><%= p.yenPerMl != null ? p.yenPerMl.toLocaleString() : '—' %></b><small>円/ml</small></span>
+            </div>
+          </a>
+        </li>
+      <% }) %>
+    </ol>
+
+    <p class="list-note">
+      香水に点数は付けていません。香りの好みは人それぞれなので、ノート・濃度・価格という「書いてある事実」だけで比べます。
+      <% if (updatedAt) { %>価格は<%= updatedAt.replace(/-/g, '/') %>時点の公式価格です。<% } %>
+      <% if (unverified) { %>「—」の価格は確認中です。<% } %>
+      <a href="/method">比べ方</a>
+    </p>
+  </div>
+</section>
+<%- include('partials/footer') %>

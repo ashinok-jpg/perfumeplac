@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+<section class="section">
+  <div class="container detail prose-lite">
+    <h1>比べ方</h1>
+    <p class="page-lead">香水には点数を付けません。香りの好みは人それぞれなので、誰が見ても同じになる事実だけで比べます。</p>
+
+    <h2>使うのは「書いてある事実」だけ</h2>
+    <p>ノート（香りの成分の表記）、濃度、容量、価格は、各ブランドの公式サイトに載っている情報から取っています。「モテる」「上品」のような印象の言葉は載せません。</p>
+
+    <h2>濃度と持ちの目安</h2>
+    <p>香料の割合で呼び方が決まっていて、濃いほど長く香ります。下の表は一般的な目安で、商品ごとに測ったものではありません。</p>
+    <table class="spec-table">
+      <tr><th>濃度</th><th>香料の割合</th><th>持ちの目安</th></tr>
+      <% Object.entries(concentrations).sort((a, b) => b[1].rank - a[1].rank).forEach(function([name, c]){ %>
+        <tr><td><%= name %></td><td><%= c.oil %></td><td><%= c.hours %></td></tr>
+      <% }) %>
+    </table>
+    <p>EDP はオードパルファム、EDT はオードトワレの略です。</p>
+
+    <h2>1mlあたりの価格</h2>
+    <p>公式の通常価格を容量で割っています。容量が複数あるときは、大きいほうの容量で計算します（たいてい1mlあたりは安くなります）。</p>
+
+    <h2>ノートが近い香水</h2>
+    <p>同じノートが入っている数と、系統が同じかどうかだけで選んでいます。同じノートが1つにつき2、系統が同じなら1を足し、多い順に4本まで出します。</p>
+  </div>
+</section>
+<%- include('partials/footer') %>

@@ -1,0 +1,68 @@
+<%- include('partials/header') %>
+<% const ci = p.concentrationInfo; %>
+<section class="section">
+  <div class="container detail">
+    <a class="back-link" href="/">← 香水一覧</a>
+    <span class="p-card__meta"><span class="fam-chip" data-family="<%= p.family %>"><%= p.family %></span><%= p.brand %></span>
+    <h1><%= p.name %></h1>
+    <p class="page-lead"><%= p.concentration %><%= p.volumes.length ? ' ・ ' + p.volumes.join(' / ') + 'ml' : '' %></p>
+
+    <div class="detail-scores detail-scores--2">
+      <div class="detail-score">
+        <span class="detail-score__use">濃度</span>
+        <span class="p-score"><b class="conc"><%= p.concentration %></b><small>香料 <%= ci ? ci.oil : '—' %></small></span>
+        <span class="detail-score__rank">持ちの目安 <%= ci ? ci.hours : '—' %>（濃度からの一般的な目安）</span>
+      </div>
+      <div class="detail-score">
+        <span class="detail-score__use">価格</span>
+        <span class="p-score p-score--value"><b><%= p.yenPerMl != null ? p.yenPerMl.toLocaleString() : '—' %></b><small>円/ml</small></span>
+        <span class="detail-score__rank"><%= p.price ? p.priceVolume + 'ml ' + p.price.toLocaleString() + '円で計算' : '価格は確認中です' %></span>
+      </div>
+    </div>
+
+    <h2>香りのノート</h2>
+    <dl class="pyramid">
+      <% [['top', 'トップ', 'つけてすぐ〜15分ほど'], ['middle', 'ミドル', '30分〜2時間ほど'], ['base', 'ベース', '2時間以降']].forEach(function([k, label, when]){ %>
+        <div class="pyramid__row pyramid__row--<%= k %>">
+          <dt><%= label %><small><%= when %></small></dt>
+          <dd>
+            <% if (p.notes[k].length) { %>
+              <% p.notes[k].forEach(function(n){ %><a class="note" href="/?q=<%= encodeURIComponent(n) %>"><%= n %></a><% }) %>
+            <% } else { %><span class="muted-text">公表なし</span><% } %>
+          </dd>
+        </div>
+      <% }) %>
+    </dl>
+    <p class="muted-text">ノートを押すと、同じノートを持つ香水を探せます。</p>
+
+    <% if (similar.length) { %>
+      <h2>ノートが近い香水</h2>
+      <ul class="p-list">
+        <% similar.forEach(function(s){ %>
+          <li class="p-card">
+            <a class="p-card__link p-card__link--plain" href="/perfume/<%= s.p.id %>">
+              <div class="p-card__main">
+                <span class="p-card__meta"><span class="fam-chip" data-family="<%= s.p.family %>"><%= s.p.family %></span><%= s.p.brand %></span>
+                <h3><%= s.p.name %></h3>
+                <p class="p-card__spec"><%= s.shared.length ? '同じノート：' + s.shared.join('・') : '同じ系統' %></p>
+              </div>
+            </a>
+          </li>
+        <% }) %>
+      </ul>
+    <% } %>
+
+    <h2>データ</h2>
+    <table class="spec-table">
+      <tr><th>ブランド</th><td><%= p.brand %></td></tr>
+      <tr><th>系統</th><td><%= p.family %></td></tr>
+      <tr><th>濃度</th><td><%= p.concentration %></td></tr>
+      <tr><th>容量</th><td><%= p.volumes.length ? p.volumes.join(' / ') + 'ml' : '—' %></td></tr>
+      <tr><th>価格</th><td><%= p.price ? p.priceVolume + 'ml ' + p.price.toLocaleString() + '円' : '確認中' %></td></tr>
+      <tr><th>確認日</th><td><%= p.checkedAt ? p.checkedAt.replace(/-/g, '/') : '—' %></td></tr>
+    </table>
+    <% if (!p.verified) { %><p class="pending-note">このページのノートと価格は、まだ公式ページで確認していません。</p><% } %>
+    <% if (p.source) { %><p><a class="btn" href="<%= p.source %>" target="_blank" rel="noopener nofollow">出典ページを見る</a></p><% } %>
+  </div>
+</section>
+<%- include('partials/footer') %>
