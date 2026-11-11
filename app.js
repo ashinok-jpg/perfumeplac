@@ -64,9 +64,11 @@ app.get('/perfume/:id', (req, res, next) => {
   const { perfumes } = loadData();
   const p = perfumes.find(x => x.id === req.params.id);
   if (!p) return next();
+  // 「シャネル N°5」のように商品名にブランド名が入っているときは重ねない
+  const fullName = p.name.startsWith(p.brand) ? p.name : `${p.brand} ${p.name}`;
   res.render('perfume', {
-    title: `${p.brand} ${p.name}のノートと価格｜perfumeplac`,
-    description: `${p.brand} ${p.name}（${p.concentration}・${p.family}）のトップ・ミドル・ベースノート、1mlあたりの価格、似たノートの香水。`,
+    title: `${fullName}のノートと価格｜perfumeplac`,
+    description: `${fullName}（${p.concentration}・${p.family}）のトップ・ミドル・ベースノート、1mlあたりの価格、似たノートの香水。`,
     p, similar: similar(p, perfumes),
   });
 });
